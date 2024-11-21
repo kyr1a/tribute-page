@@ -5,6 +5,8 @@
   --yellow: #F7A950;
   --grid: #3F51B525;
   --primary: #3F51B5;
+  --contrast: #F05A2B;
+  --contrast-dark: #952C1E;
 
 }
 
@@ -143,12 +145,67 @@ color: var(--white)
 }
 
 .section-heading {
+  font-family: "Clash Display Variable", sans-serif;
   font-size: 2rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 
+#intro .section-heading::before {
+  content: "";
+  position: absolute;
+  left: 6.75%;
+  bottom: -96px;
+  width: 202px;
+  height: 10px;
+  background: var(--tertiary);
+  z-index: -1;
+}
+
 main {
   padding: 0 96px;
 }
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tribute-info {
+  width: 60%;
+}
+
+#img-1 {
+  margin-top: -70px;
+}
+
+#origins-pt1 > .section-heading {
+  color: var(--white)
+}
+
+#origins-pt1 {
+  position: relative;
+  top: -150px;
+  background: var(--contrast);
+  z-index: -2;
+  margin-left: -108px;
+  padding-left: 108px;
+  margin-right: -108px;
+  padding-right: 108px;
+  padding-top: 8px;
+}
+
+#origins-pt1 > .section-heading::before {
+  content: "";
+  position: absolute;
+  left: 6.75%;
+  bottom: 383px;
+  width: 127px;
+  height: 10px;
+  background: var(--contrast-dark);
+  z-index: -1;
+}
+
+
+
